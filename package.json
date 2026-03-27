@@ -32,12 +32,17 @@
           {
             "name": "Keywords — view, dimension, measure, include, extends, type, sql, label, etc.",
             "scope": "keyword.control.lookml",
-            "settings": { "foreground": "#61AFEF" }
+            "settings": { "foreground": "#1692D4" }
+          },
+          {
+            "name": "SQL keyword in blocks",
+            "scope": "keyword.control.sql.lookml",
+            "settings": { "foreground": "#1692D4" }
           },
           {
             "name": "Strings — quoted values like \"Free Time Adjustment\"",
             "scope": "string.quoted.double.lookml",
-            "settings": { "foreground": "#ee9977" }
+            "settings": { "foreground": "#E47207" }
           },
           {
             "name": "Interpolation — ${TABLE}, ${view_name.field}, etc.",
