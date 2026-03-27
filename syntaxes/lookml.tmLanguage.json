@@ -6,7 +6,13 @@
       "include": "#comments"
     },
     {
+      "include": "#sql-block"
+    },
+    {
       "include": "#keywords"
+    },
+    {
+      "include": "#type-values"
     },
     {
       "include": "#values"
@@ -31,7 +37,15 @@
       "patterns": [
         {
           "name": "keyword.control.lookml",
-          "match": "\\b(view|explore|dimension|measure|dimension_group|sql|type|primary_key|derived_table|datagroup_trigger|bind_all_filters|hidden|label|group_label|view_label|column|field|explore_source)\\b"
+          "match": "\\b(include|view|explore|dimension|measure|dimension_group|extends|sql|type|primary_key|derived_table|datagroup_trigger|bind_all_filters|hidden|label|group_label|view_label|column|field|explore_source|group_item_label|description|suggest_dimension|suggest_persist_for|filter|join|relationship|from|fields|fanout_on|required_joins|tags|value_format|value_format_name|drill_fields|link|url|icon_url|action|param|set|connection|all_fields)\\b"
+        }
+      ]
+    },
+    "type-values": {
+      "patterns": [
+        {
+          "name": "support.type.lookml",
+          "match": "\\b(string|number|yesno|date|date_time|time|datetime|date_raw|epoch|count|count_distinct|sum|sum_distinct|average|average_distinct|max|min|list|percent_of_previous|percent_of_total|running_total|many_to_one|many_to_many|one_to_many|one_to_one|duration_day|duration_hour|duration_minute|duration_month|duration_quarter|duration_second|duration_week|duration_year)\\b"
         }
       ]
     },
@@ -58,7 +72,7 @@
         },
         {
           "name": "variable.interpolation.lookml",
-          "match": "\\\\\\$\\{[^}]+\\}"
+          "match": "\\$\\{[^}]+\\}"
         }
       ]
     },

@@ -25,7 +25,43 @@
       "language": "lookml",
       "scopeName": "source.lkml",
       "path": "./syntaxes/lookml.tmLanguage.json"
-    }]
+    }],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "name": "Keywords — view, dimension, measure, include, extends, type, sql, label, etc.",
+            "scope": "keyword.control.lookml",
+            "settings": { "foreground": "#61AFEF" }
+          },
+          {
+            "name": "Strings — quoted values like \"Free Time Adjustment\"",
+            "scope": "string.quoted.double.lookml",
+            "settings": { "foreground": "#ee9977" }
+          },
+          {
+            "name": "Interpolation — ${TABLE}, ${view_name.field}, etc.",
+            "scope": "variable.interpolation.lookml",
+            "settings": { "foreground": "#E06C75" }
+          },
+          {
+            "name": "Type values — string, number, yesno, date, count, sum, etc.",
+            "scope": "support.type.lookml",
+            "settings": { "foreground": "#ab56cc" }
+          },
+          {
+            "name": "SQL terminator — ;;",
+            "scope": "punctuation.terminator.sql.lookml",
+            "settings": { "foreground": "#9a969e" }
+          },
+          {
+            "name": "Comments — # inline comments",
+            "scope": "comment.line.number-sign.lookml",
+            "settings": { "foreground": "#7F848E", "fontStyle": "italic" }
+          }
+        ]
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
