@@ -1,12 +1,10 @@
 # LookML Color Formatter
 
-A VS Code extension that provides syntax highlighting and formatting for LookML files with a carefully curated color scheme.
+An extension that provides syntax highlighting and formatting for LookML files with a carefully curated color scheme.
 
 ## What It Does
 
-- **Syntax Highlighting** — Colors keywords, strings, types, and interpolations in LookML files
-- **Formatting** — Automatic indentation of LookML blocks using 2-space indentation
-- **SQL Support** — Highlights `sql:` blocks and `${TABLE}` interpolations
+Just make your LookML code look better :))
 
 ## Installation
 
