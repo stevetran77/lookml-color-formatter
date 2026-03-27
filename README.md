@@ -18,8 +18,6 @@ A VS Code extension that provides syntax highlighting and formatting for LookML 
 
 1. Open a `.lkml` or `.lookml` file in VS Code
 2. Syntax highlighting is applied automatically
-3. Format the file with `Shift+Alt+F` (or right-click → "Format Document")
-4. Indentation adjusts automatically for opening/closing braces
 
 
 ## Requirements
