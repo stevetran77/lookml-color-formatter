@@ -15,10 +15,6 @@ A VS Code extension that provides syntax highlighting and formatting for LookML 
 3. Click the `...` menu → **Install from VSIX...**
 4. Select the downloaded `.vsix` file
 
-Alternatively, install from the command line:
-```bash
-code --install-extension lookml-color-formatter-0.0.1.vsix
-```
 
 ## Repository
 
