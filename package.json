@@ -1,0 +1,40 @@
+{
+  "name": "lookml-color-formatter",
+  "displayName": "lookml-color-formatter",
+  "description": "LookML color formatter, syntax",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:lookml"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lookml",
+      "aliases": ["LookML", "lookml"],
+      "extensions": [".lkml",".lookml"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lookml",
+      "scopeName": "source.lkml",
+      "path": "./syntaxes/lookml.tmLanguage.json"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "18.x",
+    "typescript": "^5.0.0"
+  }
+}
