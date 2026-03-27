@@ -3,6 +3,13 @@
   "displayName": "lookml-color-formatter",
   "description": "LookML color formatter, syntax",
   "version": "0.0.1",
+  "icon": "logo.png",
+  "publisher": "cau-steve-tran",
+  "author": "Cau (Steve) Tran",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevetran77/lookml-color-formatter.git"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },

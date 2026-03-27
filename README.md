@@ -10,9 +10,36 @@ A VS Code extension that provides syntax highlighting and formatting for LookML 
 
 ## Installation
 
-1. Clone or download this repository
-2. Move the folder to C:\Users\Windows\.vscode\extensions
+1. Download the latest `.vsix` file from the releases
+2. Open VS Code and go to Extensions (`Ctrl+Shift+X`)
+3. Click the `...` menu → **Install from VSIX...**
+4. Select the downloaded `.vsix` file
 
+Alternatively, install from the command line:
+```bash
+code --install-extension lookml-color-formatter-0.0.1.vsix
+```
+
+## Repository
+
+[GitHub: stevetran77/lookml-color-formatter](https://github.com/stevetran77/lookml-color-formatter)
+
+## Building from Source
+
+If you want to build the extension locally:
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Compile TypeScript to JavaScript
+npm run compile
+
+# 3. Package as .vsix
+vsce package
+```
+
+This generates `lookml-color-formatter-0.0.1.vsix` which you can then install.
 
 ## Usage
 
