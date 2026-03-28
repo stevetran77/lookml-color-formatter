@@ -37,7 +37,7 @@
       "patterns": [
         {
           "name": "keyword.control.lookml",
-          "match": "\\b(include|view|explore|dimension|measure|dimension_group|extends|sql|type|primary_key|derived_table|datagroup_trigger|bind_all_filters|hidden|label|group_label|view_label|column|field|explore_source|group_item_label|description|suggest_dimension|suggest_persist_for|filter|join|relationship|from|fields|fanout_on|required_joins|tags|value_format|value_format_name|drill_fields|link|url|icon_url|action|param|set|connection|all_fields)\\b"
+          "match": "\\b(value|constant|filters|parameter|convert_tz|allow_fill|timeframes|datatype|remote_dependency|ref|include|view|explore|dimension|measure|dimension_group|extends|sql|type|primary_key|derived_table|datagroup_trigger|bind_all_filters|hidden|label|group_label|view_label|column|field|explore_source|group_item_label|description|suggest_dimension|suggest_persist_for|filter|join|relationship|from|fields|fanout_on|required_joins|tags|value_format|value_format_name|drill_fields|link|url|icon_url|action|param|set|connection|all_fields|view_name)\\b"
         }
       ]
     },
@@ -88,16 +88,26 @@
       "name": "meta.block.sql.lookml",
       "begin": "\\b(sql)\\s*:(?!\\s*\".*\")",
       "beginCaptures": {
-        "1": { "name": "keyword.control.sql.lookml" },
-        "0": { "name": "punctuation.separator.key-value.lookml" }
+        "1": {
+          "name": "keyword.control.sql.lookml"
+        },
+        "0": {
+          "name": "punctuation.separator.key-value.lookml"
+        }
       },
       "end": ";;",
       "endCaptures": {
-        "0": { "name": "punctuation.terminator.sql.lookml" }
+        "0": {
+          "name": "punctuation.terminator.sql.lookml"
+        }
       },
       "patterns": [
-        { "include": "#interpolation" },
-        { "include": "#strings" }
+        {
+          "include": "#interpolation"
+        },
+        {
+          "include": "#strings"
+        }
       ]
     }
   },
